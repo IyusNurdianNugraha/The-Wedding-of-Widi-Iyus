@@ -9,14 +9,14 @@
   <style>
     :root{--bg:#0f1724;--card:#141c2c;--accent:#f97316;--muted:#cbd5e1;--glass: rgba(255,255,255,0.05)}
     *{box-sizing:border-box}
-    body{margin:0;font-family:Inter,ui-sans-serif,system-ui,Segoe UI,Roboto,'Helvetica Neue',Arial;color:#f1f5f9;background:linear-gradient(180deg,#0b1220 0%, #0f1724 100%);-webkit-font-smoothing:antialiased}
+    body{margin:0;font-family:Inter,ui-sans-serif,system-ui,Segoe UI,Roboto,'Helvetica Neue',Arial;color:#f1f5f9;background:linear-gradient(180deg,#0b1220 0%, #0f1724 100%);-webkit-font-smoothing:anti[...]
     .container{max-width:720px;margin:0 auto;padding:16px;width:100%}
     .card{background:var(--card);border-radius:16px;padding:20px;box-shadow:0 10px 30px rgba(0,0,0,0.6);backdrop-filter: blur(6px);margin-bottom:20px}
     header{text-align:center}
-    .logo{width:72px;height:72px;border-radius:50%;background:radial-gradient(circle at 30% 20%, #fff2e6, #ffd6b3 40%, transparent 70%), linear-gradient(135deg,#ffedd5,#fff0e0);display:flex;align-items:center;justify-content:center;margin:0 auto 16px auto;}
+    .logo{width:72px;height:72px;border-radius:50%;background:radial-gradient(circle at 30% 20%, #fff2e6, #ffd6b3 40%, transparent 70%), linear-gradient(135deg,#ffedd5,#fff0e0);display:flex;align-item[...]
     h1{margin:0;font-size:26px;color:#fff}
     p.lead{color:var(--muted);margin-top:6px;font-size:15px}
-    .cover{border-radius:12px;overflow:hidden;min-height:320px;display:flex;flex-direction:column;justify-content:center;align-items:center;padding:16px;background-image:linear-gradient(180deg, rgba(0,0,0,0.1), rgba(0,0,0,0.2))}
+    .cover{border-radius:12px;overflow:hidden;min-height:320px;display:flex;flex-direction:column;justify-content:center;align-items:center;padding:16px;background-image:linear-gradient(180deg, rgba(0[...]
     .cover h2{margin:0;color:#fff;text-shadow:0 4px 14px rgba(0,0,0,0.6);font-size:28px}
     .cover p{margin:8px 0 0;color:rgba(255,255,255,0.95);font-size:18px;font-weight:500}
     .details{padding:16px;border-radius:12px;background:var(--glass)}
@@ -42,7 +42,7 @@
     .bank-acc{margin-top:6px;display:flex;align-items:center;gap:8px}
     .copy-icon{width:18px;height:18px;cursor:pointer;opacity:0.8;transition:0.2s}
     .copy-icon:hover{opacity:1}
-    .toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%);background:var(--accent);color:#fff;padding:12px 22px;border-radius:8px;box-shadow:0 6px 32px rgba(0,0,0,.19);z-index:1000;font-size:15px;}
+    .toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%);background:var(--accent);color:#fff;padding:12px 22px;border-radius:8px;box-shadow:0 6px 32px rgba(0,0,0,.19);z-index:1000;fon[...]
     @media (min-width:720px){
       .bank-row{flex-direction:row;align-items:center;justify-content:center}
     }
@@ -91,7 +91,11 @@
           <div class="muted">Alamat Acara</div>
           <div class="date">Kp. Cigebar RT 07 RW 18 Desa Bojongsari<br/>Kec. Bojongsoang Kab. Bandung</div>
         </div>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3954.683987167812!2d107.660000!3d-7.024000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e9f8f87a5e41%3A0x123456789..." title="Lokasi Acara Pernikahan"></iframe>
+        <!-- PETA GOOGLE MAPS YANG SUDAH DIPERBAIKI -->
+        <iframe 
+          src="https://www.google.com/maps?q=-7.024,107.66&hl=id&z=16&output=embed"
+          width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
         <div class="actions">
           <a href="https://maps.app.goo.gl/8cRBcLWJJDriVWQu5" target="_blank" class="btn btn-primary" rel="noopener">Lihat di Google Maps</a>
         </div>
@@ -105,7 +109,7 @@
       <div class="bank-row" style="margin:12px 0;font-size:15px">
         <div style="text-align:center">
           <div style="font-weight:700">Widi Susan Sandofa</div>
-          <div class="bank-acc">BCA — 3370895731 <img src="https://img.icons8.com/material-outlined/24/ffffff/copy.png" id="copyAcc" class="copy-icon" title="Salin nomor rekening" alt="Copy rekening BCA"/></div>
+          <div class="bank-acc">BCA — 3370895731 <img src="https://img.icons8.com/material-outlined/24/ffffff/copy.png" id="copyAcc" class="copy-icon" title="Salin nomor rekening" alt="Copy rekening[...]
         </div>
       </div>
 
@@ -263,4 +267,4 @@
     loadRsvps();
   </script>
 </body>
-            </html>
+          </html>
